@@ -1,0 +1,25 @@
+body, html {
+    height: 100%;
+  }
+  .pageSection {
+      padding: 1% 10% 0% 10%;
+  }
+  .sectionRed{
+      width:98%;
+      margin-left:1%;
+      padding-bottom:100%;
+  }
+  .bg {
+      width:100%;
+    /* The image used */
+    background-image: url("../img/fondo.png ");
+  
+    /* Half height */
+    height: 75%;
+    padding: 10%;
+    margin-bottom:-1%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
