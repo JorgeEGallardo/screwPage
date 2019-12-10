@@ -1,50 +1,52 @@
-body, html {
-    height: 100%; 
-    
-    background-color:#fdffff  ;
-  }
-  .pageSection {
-      margin: 0% 7% 0% 7%;
-      padding: 4% 2% 3% 2%;
-      
-    background-color:#ffffff;
-  }
-  .pageSectionDark{
-    margin: 0% 7% 0% 7%;
-      padding: 4% 2% 3% 2%;
-    background-color:#fcfefe;
-  }
-  .sectionRed{
-      width:98%;
-      margin-left:1%;
-      padding-bottom:100%;
-  }
-  .bg {
-      width:100%;
-    /* The image used */
-    background-image: url("../img/fondo.jpg ");
-  
-    /* Half height */
-    height: 55%;
-    padding: 5%;
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .embed-container {
-    margin-top:5%;
-    position: relative;
-    padding-bottom: 56.25%;
-    margin-left:5%;
-    width:90%;
-    height: 0;
-    overflow: hidden;
+body,
+html {
+  height: 100%;
+
+  background-color: #fdffff;
+}
+.pageSection {
+  margin: 0% 7% 0% 7%;
+  padding: 4% 2% 3% 2%;
+
+  background-color: #ffffff;
+}
+.pageSectionDark {
+  margin: 0% 7% 0% 7%;
+  padding: 4% 2% 3% 2%;
+  background-color: #fcfefe;
+}
+.sectionRed {
+  width: 98%;
+  margin-left: 1%;
+  padding-bottom: 100%;
+}
+.bg {
+  width: 100%;
+  /* The image used */
+  background-image: url("../img/fondo.jpg ");
+
+  /* Half height */
+  height: 55%;
+  padding: 5%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Google Maps*/
+.embed-container {
+  position: relative;
+  padding-bottom: 27.25%;
+  min-height: 300px;
+  margin-left: 8%;
+  width: 90%;
+  height: 0;
+  overflow: hidden;
 }
 .embed-container iframe {
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
