@@ -60,8 +60,18 @@
         <!----Right-->
       </div>
       <div class="md-form my-0 pt-1 float-right	.ml-lg-3 .d-xl-0 d-none d-lg-block">
-        <p class="text-white"> <i class="fas fa-map-marker-alt brown-text mr-4 fa-2x"></i>Boulevard Francisco Villa,
-          Aluminio 34208 | 9:00 am - 5:00 pm</p>
+       <a target="_blank" href="https://www.google.com/maps/dir/Durango,+Dgo./Tornillos+DGS/@24.0441912,-104.6477419,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x869bb7a518bcdf73:0xbfdd8ea63a6c4ad4!2m2!1d-104.6531759!2d24.0277202!1m5!1m1!1s0x869bb7c9bd457bf5:0x77d9aff522f1ada6!2m2!1d-104.6046249!2d24.0632264"> <p class="text-white"> <i class="fas fa-map-marker-alt white-text mr-1 fa-1x"></i> Como llegar</p></a>
+        </div>
+        <div class="md-form my-0 pt-1 float-right	.ml-lg-3 ml-2 mr-2 .d-xl-0 d-none d-lg-block">
+  
+        <a  data-target="#basicExampleModal" data-toggle="modal" class="MainNavText" id="MainNavHelp" 
+        href="#basicExampleModal" ><p class="text-white"> <i class="fas fa-newspaper white-text mr-1 fa-1x"></i> Obtener presupuesto</p></a>
+        
+      </div>
+      <div class="md-form my-0 pt-1 float-right	.ml-lg-3 ml-2 .d-xl-0 d-none d-lg-block">
+  
+        <a href="tel:+526186902798"><p class="text-white"> <i class="fas fa-phone white-text mr-1 fa-1x"></i> Llamar ahora</p></a>
+        
       </div>
     </div>
   </nav>
@@ -145,8 +155,10 @@
         </div>
       </div>
       <!--Grid column-->
-
-    </div>
+      <div class="text-center" style="width: 100%;">
+        <button type="button" class="btn btn-light-green"  data-toggle="modal" data-target="#basicExampleModal"><h5>Realizar una cotización</h5></button>
+      </div>
+     </div>
     <!--Grid row-->
   </div>
   <!-------Services-->
@@ -221,21 +233,26 @@
 
         <div class="container mt-4">
           <div class="row">
-            <div class="col-sm">
+            <div class="col-sm imgMap"><a href="tel:+526186902798" title="Llamar">
               <i class="fab fa-whatsapp wow zoomIn green-text fa-6x"></i>
-              <div class="col text-center mt-4 ">618 690 2798</div>
+              <div class="col text-center mt-4  black-text">618 690 2798</div>
+              </a>
             </div>
-            <div class="col-sm">
+            <div class="col-sm imgMap" title="Como llegar">
+              <a target="_blank" href="https://www.google.com/maps/dir/Durango,+Dgo./Tornillos+DGS/@24.0441912,-104.6477419,14z/data=!3m1!4b1!4m13!4m12!1m5!1m1!1s0x869bb7a518bcdf73:0xbfdd8ea63a6c4ad4!2m2!1d-104.6531759!2d24.0277202!1m5!1m1!1s0x869bb7c9bd457bf5:0x77d9aff522f1ada6!2m2!1d-104.6046249!2d24.0632264">
               <i class="fas fa-map-marker-alt wow zoomIn brown-text  fa-6x"></i>
-              <div class="col text-center mt-4 ">Blvrd Francisco Villa, Cd Industrial, Fidel Velázquez </div>
+              <div class="col text-center mt-4  black-text">Blvrd Francisco Villa, Cd Industrial, Fidel Velázquez </div>
+              </a>
             </div>
-            <div class="col-sm">
+            <div class="col-sm imgMap">
               <i class="fab fa-facebook-f blue-text wow zoomIn fa-6x"></i>
-              <div class="col text-center mt-4 ">Facebook</div>
+              <div class="col text-center mt-4  black-text">Facebook</div>
             </div>
-            <div class="col-sm">
-              <i class="fas fa-at wow zoomIn fa-6x"></i>
-              <div class="col text-center mt-4 ">TornillosDGS@gmail.com </div>
+              <div class="col-sm imgMap"  title="Enviar email">
+                <a href="mailto:TornillosDGS@gmail.com">
+                    <i class="fas fa-at wow zoomIn fa-6x"></i>
+              <div class="col text-center mt-4  black-text">TornillosDGS@gmail.com </div>
+              </a>
             </div>
           </div>
 
@@ -247,7 +264,6 @@
   </div>
   <!--------------->
   <!----Contact us--->
-
 
   <!--Footer-->
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
@@ -263,6 +279,20 @@
   <!-- End of page-->
 
 
+<!-- Modal -->
+<div class="modal fade"  style="background-color: rgba( 0, 0, 0, 0.2);" id="basicExampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"  style="background-color: rgba( 0, 0, 0, 0);">
+     
+          <div class=" z-depth-2">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesjR4gzOMIgw_YtCat4mQBCIJEB7LpEZbqVOmy8jeAswIx_w/viewform?embedded=true" width="640" height="891" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          </div>
+     
+    </div>
+  </div>
+</div> 
+
 
   <!-- jQuery -->
   <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -277,6 +307,8 @@
   <script> $(document).ready(function () {
       new WOW().init();
       $('.logo').hover(function () { $(this).toggleClass('animated pulse') });
+      $('.imgMap').hover(function () { $(this).toggleClass('animated bounce') });
+  
     });
 
   </script>
