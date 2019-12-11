@@ -29,7 +29,7 @@
     <div class="container">
       <!--- <div style="width:2%"><img class="img-fluid" src="img/logo.png"></div>
       <!-- Brand -->
-      <a class="navbar-brand waves-effect" href="https://mdbootstrap.com/docs/jquery/" target="_blank">
+      <a class="navbar-brand waves-effect" href="#inicio">
         <img src="img/LOGO.jpg" style="max-width: 10rem;">
       </a>
       <!-- Collapse -->
@@ -42,7 +42,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link waves-effect" href="#">Inicio
+            <a class="nav-link waves-effect" href="#inicio">Inicio
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -80,9 +80,9 @@
 
 
   <!----Cover-->
-  <div class="bg ">
-    <div class="jumbotron" style="background-color: rgba( 0, 0, 0, 0.2);">
-      <div class="text-white text-center py-0 px-4">
+  <div class="bg "id="inicio">
+    <div class="jumbotron z-depth-2" style="background-color: rgba( 0, 0, 0, 0.2);">
+      <div class="text-white text-center py-0 px-4b ">
         <h2 class="display-4 mb-5">Tornillos sss</h2>
         <h3 class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
           suscipit modi sapiente illo soluta odit</h3>
@@ -156,7 +156,7 @@
       </div>
       <!--Grid column-->
       <div class="text-center" style="width: 100%;">
-        <button type="button" class="btn btn-light-green"  data-toggle="modal" data-target="#basicExampleModal"><h5>Realizar una cotización</h5></button>
+        <button type="button" class="btn btn-light-green btn-rounded z-depth-3a"  data-toggle="modal" data-target="#basicExampleModal"><h5>Realizar una cotización</h5></button>
       </div>
      </div>
     <!--Grid row-->
@@ -196,7 +196,7 @@
               </div>
             </div>
           </div>
-          <a href="#contact"><button type="button" class="btn btn-indigo">Contáctanos</button></a>
+        <a href="#contact"> <button type="button"  class="btn btn-indigo">Contáctanos</button></a>
           <!--Grid column-->
         </div>
       </div>
@@ -245,8 +245,10 @@
               </a>
             </div>
             <div class="col-sm imgMap">
-              <i class="fab fa-facebook-f blue-text wow zoomIn fa-6x"></i>
+              <a href="https://www.facebook.com" target="_blank">
+              <i class="fab fa-facebook-f blue-text wow zoomIn fa-6x" title="Encuentranos en facebook"></i>
               <div class="col text-center mt-4  black-text">Facebook</div>
+              </a>
             </div>
               <div class="col-sm imgMap"  title="Enviar email">
                 <a href="mailto:TornillosDGS@gmail.com">
@@ -308,8 +310,15 @@
       new WOW().init();
       $('.logo').hover(function () { $(this).toggleClass('animated pulse') });
       $('.imgMap').hover(function () { $(this).toggleClass('animated bounce') });
-  
     });
+    $(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
+  
 
   </script>
 </body>
