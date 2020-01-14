@@ -26,7 +26,7 @@ html {
   background-image: url("../img/fondo.jpg ");
 
   /* Half height */
-  height: 55%;
+  height: 30rem;
   padding: 5rem;
   /* Center and scale the image nicely */
   background-position: center;
